@@ -1,140 +1,721 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>portofolio</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portofolio</title>
-        <!-- link css -->
-        <link rel="stylesheet" href="css/style.css">
-    </head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
 
-    <body>
-        <!-- start header -->
-        <header>
-            <nav class="navbar" id="navbar">
-                <!-- <h1>LOGO</h1> -->
-                <img src="img/logo.jpg" alt="">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#profile">Profil</a></li>
-                    <li><a href="#about">Biografi</a></li>
-                    <li><a href="#Certificate">Certificate</a></li>
-                    <li><a href="#skill">Skill</a></li>
-                    <li><a href="#kontak">Kontak</a></li>
-                </ul>
-            </nav>
-        </header>
-        <!-- end header -->
-        <!-- start main -->
-        <main>
-            <aside id="profile" class="card">
-                <h2>Profil</h2>
-                <img src="img/foto.JPG" alt="" class="foto">
-                <table>
-                    <tr>
-                        <th>Nama </th>
-                        <td>M Riefky Rafliana S</td>
-                    </tr>
-                    <tr>
-                        <th>TTL </th>
-                        <td>Bandung, 11-12-2001</td>
-                    </tr>
-                    <tr>
-                        <th>Asal </th>
-                        <td>Bandung</td>
-                    </tr>
-                    <tr>
-                        <th>Pekerjaan </th>
-                        <td>Mahasiswa & Programmer</td>
-                    </tr>
-                    <tr>
-                        <th>Status </th>
-                        <td>Tidak Menikah</td>
-                    </tr>
-                </table>
-            </aside>
-            <div class="content">
-                <div class="card ">
-                    <article id="about">
-                        <h2>Biografi</h2>
-                        <p>Pekerknalkan nama saya <span>Mochamad Riefky Rafliana Suwandy</span> saya biasa dipanggil
-                            <span>Riefky</span>, Saya adalah seorang mahasiswa jurusan teknik informatika di semester 7.
-                            saya juga memiliki minat yang tinggi di bidang web Developer, Saya menguasai bahasa
-                            pemrograman seperti HTML, CSS, Javascript untuk membangun sebuah sistem berbasis web. saya
-                            juga memiliki keahlian di bidang Back-End Developer seperti membuat membuat aplikasi
-                            menggunakan laravel ataupun js </p>
-                    </article>
-                    <article id="Certificate" class="certificate">
-                        <h2>Certificate</h2>
-                        <ol>
-                            <li><a href="https://www.dicoding.com/certificates/NVP7826JWXR0" target="_blank"
-                                    rel="noopener noreferrer">Belajar Dasar Structured Query Language (SQL)</a></li>
-                            <li><a href="https://www.dicoding.com/certificates/1RXY0LG69ZVM" target="_blank"
-                                    rel="noopener noreferrer">Belajar Dasar Pemrograman Web</a>
-                            </li>
-                            <li><a href="https://www.dicoding.com/certificates/2VX36D70QXYQ" target="_blank"
-                                    rel="noopener noreferrer">Belajar Dasar Pemrograman JavaScript</a></li>
-                            <li><a href="https://www.dicoding.com/certificates/JMZVN686QPN9" target="_blank"
-                                    rel="noopener noreferrer">Cloud Practitioner Essentials (Belajar Dasar AWS
-                                    Cloud)</a></li>
-                            <li><a href="https://www.dicoding.com/certificates/JMZV98VMQPN9" target="_blank"
-                                    rel="noopener noreferrer">Belajar Membuat Aplikasi Back-End untuk Pemula</a></li>
-                        </ol>
-                    </article>
-                    <article id="skill" class="skill">
-                        <h2>Skill</h2>
-                        <h5>PHP & Laravel</h5>
-                        <div class="progres-bar">
-                            <span data-width="85%"></span>
-                        </div>
-                        <h5>Javascript, Node & Express JS</h5>
-                        <div class="progres-bar">
-                            <span data-width="80%"></span>
-                        </div>
-                        <h5>Database MySQL</h5>
-                        <div class="progres-bar">
-                            <span data-width="88%"></span>
-                        </div>
-                        <h5>GIT</h5>
-                        <div class="progres-bar">
-                            <span data-width="75%"></span>
-                        </div>
-                        <h5>Operation System (windows & Linux)</h5>
-                        <div class="progres-bar">
-                            <span data-width="80%"></span>
-                        </div>
-                    </article>
-                    <article id="kontak" class="kontak">
-                        <h2>Kontak</h2>
-                        <div class="kontak-list">
-                            <p><a href="https://linkedin.com/in/mochamad-riefky-rafliana-s-9a7610281" target="_blank"><i
-                                        class="fa-brands fa-linkedin"></i> Linkedln</a></li>
-                            </p>
-                            <p> <a href="https://www.instagram.com/riefkyrafliana/" target="_blank"><i
-                                        class="fa-brands fa-instagram"></i> Instagram</a></li>
-                            </p>
-                            <p> <a href=""><i class="fa-brands fa-whatsapp"></i> WhatsApp</a></li>
-                            </p>
-                            <p><a href="https://github.com/mriefky11"><i class="fa-brands fa-github"></i>Github</a></li>
-                            </p>
-                        </div>
-                    </article>
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+
+    <link rel="stylesheet" href="css/aos.css" />
+
+    <link rel="stylesheet" href="css/ionicons.min.css" />
+
+    <link rel="stylesheet" href="css/flaticon.css" />
+    <link rel="stylesheet" href="css/icomoon.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+    <nav
+      class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target"
+      id="ftco-navbar"
+    >
+      <div class="container mt-3">
+        <!-- Navbar Toggler (Tetap di Kanan) -->
+        <button
+          class="navbar-toggler ml-auto"
+          type="button"
+          data-toggle="collapse"
+          data-target="#ftco-nav"
+          aria-controls="ftco-nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="oi oi-menu"></span> Menu
+        </button>
+
+        <!-- Navbar Menu (Rata Tengah) -->
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="ftco-nav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="#home-section" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about-section" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#resume-section" class="nav-link">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a href="#skills-section" class="nav-link">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a href="#projects-section" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact-section" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="home-section" class="hero">
+      <div class="home-slider owl-carousel">
+        <div class="slider-item">
+          <div class="overlay"></div>
+          <div class="container">
+            <div
+              class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
+              data-scrollax-parent="true"
+            >
+              <div
+                class="one-third js-fullheight order-md-last img"
+                style="background-image: url(images/foto.png)"
+              >
+                <div class="overlay"></div>
+              </div>
+              <div
+                class="one-forth d-flex align-items-center ftco-animate"
+                data-scrollax=" properties: { translateY: '70%' }"
+              >
+                <div class="text">
+                  <span class="subheading">Hallo!</span>
+                  <h1 class="mb-4 mt-3">
+                    I'm <span>Mochamad Riefky Rafliana Suwandy</span>
+                  </h1>
+                  <h2 class="mb-4">Web Developer</h2>
+                  <p>
+                    <a
+                      href="https://linkedin.com/in/mriefkyraflianas"
+                      target="_blank"
+                      class="btn btn-primary py-3 px-4"
+                      >Hire me</a
+                    >
+                  </p>
                 </div>
+              </div>
             </div>
-        </main>
-        <!-- end main -->
-        <!-- start footer -->
-        <footer>
-            <div class="footer">
-                <P>Copyright@2023 By Mochamad Riefky Rafliana Suwandy</P>
-            </div>
-        </footer>
-        <!-- end footer -->
-    </body>
-    <!-- link font awesome -->
-    <script src="https://kit.fontawesome.com/49f6aaa765.js" crossorigin="anonymous"></script>
-    <!-- progres bar js-->
-    <script src="js/main.js"></script>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+      <div class="container">
+        <div class="row d-flex">
+          <div class="col-md-6 col-lg-5 d-flex">
+            <div class="img-about img d-flex align-items-stretch">
+              <div class="overlay"></div>
+              <div
+                class="img d-flex align-self-stretch align-items-center"
+                style="background-image: url(images/foto.png)"
+              ></div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+            <div class="row justify-content-start pb-3">
+              <div class="col-md-12 heading-section ftco-animate">
+                <h1 class="big">About</h1>
+                <h2 class="mb-4">About Me</h2>
+                <p>
+                  A small river named Duden flows by their place and supplies it
+                  with the necessary regelialia.
+                </p>
+                <ul class="about-info mt-4 px-md-0 px-2">
+                  <li class="d-flex">
+                    <span>Name:</span>
+                    <span>Mochamad Riefky Rafliana Suwandy</span>
+                  </li>
+                  <li class="d-flex">
+                    <span>Date of birth:</span> <span>11 December 2001</span>
+                  </li>
+                  <li class="d-flex">
+                    <span>Email:</span>
+                    <span>mrifki766@gmail.com / 2006085@itg.ac.id</span>
+                  </li>
+                  <li class="d-flex">
+                    <span>Phone: </span> <span>(+62) 082125358072</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="counter-wrap ftco-animate d-flex mt-md-3">
+              <div class="text">
+                <p class="mb-4">
+                  <span class="number" data-number="5">0</span>
+                  <span>Project complete</span>
+                </p>
+                <p>
+                  <a
+                    href="https://drive.google.com/drive/folders/1tTVUnBzRpIXdIMrmODr5Y8bOB2Vs7u8c?usp=sharing"
+                    target="_blank"
+                    class="btn btn-primary py-3 px-3"
+                    >Download CV</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+      <div class="container">
+        <div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="resume-wrap ftco-animate">
+              <span class="date">2023</span>
+              <h2>Internship</h2>
+              <span class="position">Infolahta Kodam III Siliwangi</span>
+              <p class="mt-4">
+                Bekerja di Infolahta Kodam III Siliwangi sebagai mahasiswa
+                magang di bidang Web Developer selama 1 bulan.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="resume-wrap ftco-animate">
+              <span class="date">2020-2024</span>
+              <h2>Bachelor of Informatics Engineering</h2>
+              <span class="position">Institur Teknologi Garut</span>
+              <p class="mt-4">
+                Mahasiswa Teknik Informatika yang berfokus pada bidang
+                pengembangan website, aplikasi dan machine learning.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center mt-5">
+          <div class="col-md-6 text-center ftco-animate">
+            <p>
+              <a
+                href="https://drive.google.com/drive/folders/1tTVUnBzRpIXdIMrmODr5Y8bOB2Vs7u8c?usp=sharing"
+                target="_blank"
+                class="btn btn-primary py-4 px-5"
+                >Download CV</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section" id="skills-section">
+      <div class="container">
+        <div class="row justify-content-center pb-5">
+          <div class="col-md-12 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Skills</h1>
+            <h2 class="mb-4">My Skills</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="scroll-container">
+            <div class="scroll-track">
+              <!-- Daftar item -->
+              <div class="scroll-item">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                  alt="HTML"
+                />
+                <h6>HTML</h6>
+              </div>
+              <div class="scroll-item">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                  alt="CSS"
+                />
+                <h6>CSS</h6>
+              </div>
+              <div class="scroll-item">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                  alt="JavaScript"
+                />
+                <h6>JavaScript</h6>
+              </div>
+              <div class="scroll-item">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                  alt="React.js"
+                />
+                <h6>React.js</h6>
+              </div>
+              <div class="scroll-item">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                  alt="Python"
+                />
+                <h6>Python</h6>
+              </div>
+              <div class="scroll-item">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+                  alt="Figma"
+                />
+                <h6>Figma</h6>
+              </div>
+              <div class="scroll-item">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                  alt="MySQL"
+                />
+                <h6>MySQL</h6>
+              </div>
+              <div class="scroll-item">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                  alt="Git"
+                />
+                <h6>Git</h6>
+              </div>
+              <div class="scroll-item">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg"
+                  alt="Laravel"
+                />
+                <h6>Laravel</h6>
+              </div>
+              <div class="scroll-item">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+                  alt="PHP"
+                />
+                <h6>PHP</h6>
+              </div>
+              <!-- Duplikasi item untuk efek loop -->
+              <div class="scroll-item">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                  alt="HTML"
+                />
+                <h6>HTML</h6>
+              </div>
+              <div class="scroll-item">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                  alt="CSS"
+                />
+                <h6>CSS</h6>
+              </div>
+              <div class="scroll-item">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                  alt="JavaScript"
+                />
+                <h6>JavaScript</h6>
+              </div>
+              <div class="scroll-item">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                  alt="React.js"
+                />
+                <h6>React.js</h6>
+              </div>
+              <div class="scroll-item">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                  alt="Python"
+                />
+                <h6>Python</h6>
+              </div>
+              <div class="scroll-item">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+                  alt="Figma"
+                />
+                <h6>Figma</h6>
+              </div>
+              <div class="scroll-item">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                  alt="MySQL"
+                />
+                <h6>MySQL</h6>
+              </div>
+              <div class="scroll-item">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                  alt="Git"
+                />
+                <h6>Git</h6>
+              </div>
+              <div class="scroll-item">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg"
+                  alt="Laravel"
+                />
+                <h6>Laravel</h6>
+              </div>
+              <div class="scroll-item">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+                  alt="PHP"
+                />
+                <h6>PHP</h6>
+              </div>
+              <div class="scroll-item">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                  alt="HTML"
+                />
+                <h6>HTML</h6>
+              </div>
+              <div class="scroll-item">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                  alt="CSS"
+                />
+                <h6>CSS</h6>
+              </div>
+              <div class="scroll-item">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                  alt="JavaScript"
+                />
+                <h6>JavaScript</h6>
+              </div>
+              <div class="scroll-item">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                  alt="React.js"
+                />
+                <h6>React.js</h6>
+              </div>
+              <div class="scroll-item">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                  alt="Python"
+                />
+                <h6>Python</h6>
+              </div>
+              <div class="scroll-item">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+                  alt="Figma"
+                />
+                <h6>Figma</h6>
+              </div>
+              <div class="scroll-item">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                  alt="MySQL"
+                />
+                <h6>MySQL</h6>
+              </div>
+              <div class="scroll-item">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                  alt="Git"
+                />
+                <h6>Git</h6>
+              </div>
+              <div class="scroll-item">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg"
+                  alt="Laravel"
+                />
+                <h6>Laravel</h6>
+              </div>
+              <div class="scroll-item">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+                  alt="PHP"
+                />
+                <h6>PHP</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section ftco-project" id="projects-section">
+      <div class="container">
+        <div class="row justify-content-center pb-5">
+          <div class="col-md-12 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Our Projects</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5">
+            <a href="https://github.com/mriefky11/arsip-surat">
+              <div
+                class="project img ftco-animate d-flex justify-content-center align-items-center"
+                style="background-image: url(images/project2.png)"
+              >
+                <div class="overlay"></div>
+                <div class="text text-center p-4">
+                  <h3>Arsip Surat</h3>
+                  <span>Web Developer</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-7">
+            <a
+              href="https://github.com/mriefky11/eye-disease-detection"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div
+                class="project img ftco-animate d-flex justify-content-center align-items-center"
+                style="background-image: url(images/project1.png)"
+              >
+                <div class="overlay"></div>
+                <div class="text text-center p-4">
+                  <h3>Prototype Eye Disease Detection</h3>
+                  <span>Web App & Machine Learning</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-7">
+            <a href="https://github.com/mriefky11/penjualan-toko-daging-online">
+              <div
+                class="project img ftco-animate d-flex justify-content-center align-items-center"
+                style="background-image: url(images/project3.png)"
+              >
+                <div class="overlay"></div>
+                <div class="text text-center p-4">
+                  <h3>E-Commerce Penjualan Toko Daging</h3>
+                  <span>Web Developer</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-5">
+            <a href="https://github.com/Hawarikun/Elfin">
+              <div
+                class="project img ftco-animate d-flex justify-content-center align-items-center"
+                style="background-image: url(images/project4.png)"
+              >
+                <div class="overlay"></div>
+                <div class="text text-center p-4">
+                  <h3>Web Booking Mobil Elf</h3>
+                  <span>Web Developer</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img"
+      id="section-counter"
+    >
+      <div class="container">
+        <div class="row d-md-flex align-items-center">
+          <div
+            class="col-md d-flex justify-content-center counter-wrap ftco-animate"
+          >
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="1">0</strong>
+                <span>Years Experience</span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md d-flex justify-content-center counter-wrap ftco-animate"
+          >
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="5">0</strong>
+                <span>Complete Projects</span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md d-flex justify-content-center counter-wrap ftco-animate"
+          >
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="10">0</strong>
+                <span>Skills</span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md d-flex justify-content-center counter-wrap ftco-animate"
+          >
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="100">0</strong>
+                <span>Cups of coffee</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="ftco-section ftco-hireme img margin-top"
+      style="background-image: url(images/bg_1.jpg)"
+    >
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-7 ftco-animate text-center">
+            <h2>I'm <span>Available</span> for Working</h2>
+            <p></p>
+            <p class="mb-0">
+              <a href="#" class="btn btn-primary py-3 px-5">Hire me</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="ftco-section contact-section ftco-no-pb"
+      id="contact-section"
+    >
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+            <div class="align-self-stretch box p-4 text-center">
+              <div
+                class="icon d-flex align-items-center justify-content-center"
+              >
+                <span class="icon-map-signs"></span>
+              </div>
+              <h3 class="mb-4">Address</h3>
+              <p>Jl. Saluyu C IV No.186 / II-H Kota Bandung</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+            <div class="align-self-stretch box p-4 text-center">
+              <div
+                class="icon d-flex align-items-center justify-content-center"
+              >
+                <span class="icon-phone2"></span>
+              </div>
+              <h3 class="mb-4">Contact Number</h3>
+              <p><a href="tel://1234567920">(+62) 082-125-358-072</a></p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+            <div class="align-self-stretch box p-4 text-center">
+              <div
+                class="icon d-flex align-items-center justify-content-center"
+              >
+                <span class="icon-paper-plane"></span>
+              </div>
+              <h3 class="mb-4">Email Address</h3>
+              <p>
+                <a href="">mrifki766@gmail.com</a>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+            <div class="align-self-stretch box p-4 text-center">
+              <div
+                class="icon d-flex align-items-center justify-content-center"
+              >
+                <span class="icon-globe"></span>
+              </div>
+              <h3 class="mb-4">Linkedin</h3>
+              <p>
+                <a
+                  href="https://linkedin.com/in/mriefkyraflianas"
+                  target="_blank"
+                  >linkedin.com/in/mriefkyraflianas/</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p>
+              Copyright &copy; Mochamad Riefky Rafliana Suwandy
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- loader -->
+    <div id="ftco-loader" class="show fullscreen">
+      <svg class="circular" width="48px" height="48px">
+        <circle
+          class="path-bg"
+          cx="24"
+          cy="24"
+          r="22"
+          fill="none"
+          stroke-width="4"
+          stroke="#eeeeee"
+        />
+        <circle
+          class="path"
+          cx="24"
+          cy="24"
+          r="22"
+          fill="none"
+          stroke-width="4"
+          stroke-miterlimit="10"
+          stroke="#F96D00"
+        />
+      </svg>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+
+    <script src="js/main.js"></script>
+  </body>
 </html>
