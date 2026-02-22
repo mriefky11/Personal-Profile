@@ -1,721 +1,372 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="id">
   <head>
-    <title>portofolio</title>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mochamad Riefky Rafliana Suwandy - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link
-      href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
-
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css" />
-    <link rel="stylesheet" href="css/animate.css" />
-
-    <link rel="stylesheet" href="css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
-    <link rel="stylesheet" href="css/magnific-popup.css" />
-
-    <link rel="stylesheet" href="css/aos.css" />
-
-    <link rel="stylesheet" href="css/ionicons.min.css" />
-
-    <link rel="stylesheet" href="css/flaticon.css" />
-    <link rel="stylesheet" href="css/icomoon.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              primary: '#2563eb', // Warna biru profesional
+              dark: '#1e293b',
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
   </head>
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-    <nav
-      class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target"
-      id="ftco-navbar"
-    >
-      <div class="container mt-3">
-        <!-- Navbar Toggler (Tetap di Kanan) -->
-        <button
-          class="navbar-toggler ml-auto"
-          type="button"
-          data-toggle="collapse"
-          data-target="#ftco-nav"
-          aria-controls="ftco-nav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="oi oi-menu"></span> Menu
-        </button>
-
-        <!-- Navbar Menu (Rata Tengah) -->
-        <div
-          class="collapse navbar-collapse justify-content-center"
-          id="ftco-nav"
-        >
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a href="#home-section" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="#about-section" class="nav-link">About</a>
-            </li>
-            <li class="nav-item">
-              <a href="#resume-section" class="nav-link">Resume</a>
-            </li>
-            <li class="nav-item">
-              <a href="#skills-section" class="nav-link">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a href="#projects-section" class="nav-link">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a href="#contact-section" class="nav-link">Contact</a>
-            </li>
-          </ul>
+  <body class="bg-gray-50 text-gray-800 font-sans antialiased">
+    <nav class="bg-white shadow-md fixed w-full z-10 top-0">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between items-center py-4">
+          <a href="#" class="text-xl font-bold text-dark tracking-wide"
+            >Riefky<span class="text-primary">.dev</span></a
+          >
+          <div class="hidden md:flex space-x-6">
+            <a href="#about" class="hover:text-primary transition font-medium"
+              >Tentang Saya</a
+            >
+            <a
+              href="#experience"
+              class="hover:text-primary transition font-medium"
+              >Pengalaman</a
+            >
+            <a href="#skills" class="hover:text-primary transition font-medium"
+              >Keahlian</a
+            >
+            <a
+              href="#projects"
+              class="hover:text-primary transition font-medium"
+              >Proyek</a
+            >
+          </div>
         </div>
       </div>
     </nav>
 
-    <section id="home-section" class="hero">
-      <div class="home-slider owl-carousel">
-        <div class="slider-item">
-          <div class="overlay"></div>
-          <div class="container">
+    <section
+      id="hero"
+      class="min-h-screen flex items-center justify-center pt-20"
+    >
+      <div class="max-w-4xl mx-auto px-4 text-center">
+        <p class="text-lg text-primary font-semibold mb-2">
+          Halo, perkenalkan saya
+        </p>
+        <h1 class="text-4xl md:text-6xl font-bold text-dark mb-4">
+          Mochamad Riefky Rafliana S.
+        </h1>
+        <h2 class="text-2xl md:text-3xl font-medium text-gray-600 mb-6">
+          Fullstack Web Developer | Laravel & Vue.js
+        </h2>
+        <p class="text-gray-600 mb-8 max-w-2xl mx-auto leading-relaxed">
+          Berdedikasi dalam merancang, mengembangkan, dan mengoptimalkan
+          aplikasi web secara end-to-end. Memiliki keahlian mendalam pada
+          ekosistem JavaScript dan PHP untuk menghadirkan solusi digital yang
+          responsif, efisien, dan berdampak.
+        </p>
+        <div class="flex justify-center space-x-4">
+          <a
+            href="#projects"
+            class="bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition shadow-lg"
+            >Lihat Proyek</a
+          >
+          <a
+            href="LINK_CV_ANDA_DISINI"
+            target="_blank"
+            class="border-2 border-primary text-primary px-6 py-3 rounded-lg font-medium hover:bg-primary hover:text-white transition"
+            >Unduh CV</a
+          >
+        </div>
+        <div class="mt-8 flex justify-center space-x-6 text-2xl text-gray-600">
+          <a
+            href="LINK_LINKEDIN_ANDA"
+            target="_blank"
+            class="hover:text-primary transition"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a
+            href="LINK_GITHUB_ANDA"
+            target="_blank"
+            class="hover:text-dark transition"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            href="mailto:2006085@itg.ac.id"
+            class="hover:text-red-500 transition"
+            ><i class="fas fa-envelope"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="py-20 bg-white">
+      <div class="max-w-5xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-dark text-center mb-8">
+          Tentang Saya
+        </h2>
+        <div
+          class="text-gray-600 leading-relaxed max-w-3xl mx-auto text-center md:text-left"
+        >
+          <p class="mb-4">
+            Saya adalah seorang Fullstack Web Developer yang berpengalaman dalam
+            membangun aplikasi web dari tahap perancangan antarmuka (UI/UX)
+            hingga arsitektur database di sisi backend. Dengan latar belakang
+            pendidikan S1 Teknik Informatika (Lulusan Cum Laude), saya terbiasa
+            memecahkan masalah kompleks dan merumuskannya menjadi kode yang
+            bersih serta terukur.
+          </p>
+          <p>
+            Saat ini saya aktif menggunakan teknologi modern seperti
+            <strong>Vue.js</strong>, <strong>Laravel</strong>,
+            <strong>Tailwind CSS</strong>, dan <strong>Bootstrap</strong>. Saya
+            adalah individu yang sangat adaptif, komunikatif dalam bekerja sama
+            di dalam tim, dan selalu antusias untuk mengadopsi teknologi baru.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="py-20 bg-gray-50">
+      <div class="max-w-4xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-dark text-center mb-10">
+          Pengalaman Profesional
+        </h2>
+
+        <div class="space-y-8">
+          <div
+            class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-primary"
+          >
+            <h3 class="text-xl font-bold text-dark">Fullstack Developer</h3>
             <div
-              class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
-              data-scrollax-parent="true"
+              class="flex flex-col md:flex-row md:justify-between text-gray-500 text-sm mb-4"
             >
-              <div
-                class="one-third js-fullheight order-md-last img"
-                style="background-image: url(images/foto.png)"
+              <span>PT Evolusi Digital Bersama – Bandung, Jawa Barat</span>
+              <span class="font-medium text-primary"
+                >Agustus 2025 – Sekarang</span
               >
-                <div class="overlay"></div>
-              </div>
-              <div
-                class="one-forth d-flex align-items-center ftco-animate"
-                data-scrollax=" properties: { translateY: '70%' }"
-              >
-                <div class="text">
-                  <span class="subheading">Hallo!</span>
-                  <h1 class="mb-4 mt-3">
-                    I'm <span>Mochamad Riefky Rafliana Suwandy</span>
-                  </h1>
-                  <h2 class="mb-4">Web Developer</h2>
-                  <p>
-                    <a
-                      href="https://linkedin.com/in/mriefkyraflianas"
-                      target="_blank"
-                      class="btn btn-primary py-3 px-4"
-                      >Hire me</a
-                    >
-                  </p>
-                </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
-      <div class="container">
-        <div class="row d-flex">
-          <div class="col-md-6 col-lg-5 d-flex">
-            <div class="img-about img d-flex align-items-stretch">
-              <div class="overlay"></div>
-              <div
-                class="img d-flex align-self-stretch align-items-center"
-                style="background-image: url(images/foto.png)"
-              ></div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
-            <div class="row justify-content-start pb-3">
-              <div class="col-md-12 heading-section ftco-animate">
-                <h1 class="big">About</h1>
-                <h2 class="mb-4">About Me</h2>
-                <p>
-                  A small river named Duden flows by their place and supplies it
-                  with the necessary regelialia.
-                </p>
-                <ul class="about-info mt-4 px-md-0 px-2">
-                  <li class="d-flex">
-                    <span>Name:</span>
-                    <span>Mochamad Riefky Rafliana Suwandy</span>
-                  </li>
-                  <li class="d-flex">
-                    <span>Date of birth:</span> <span>11 December 2001</span>
-                  </li>
-                  <li class="d-flex">
-                    <span>Email:</span>
-                    <span>mrifki766@gmail.com / 2006085@itg.ac.id</span>
-                  </li>
-                  <li class="d-flex">
-                    <span>Phone: </span> <span>(+62) 082125358072</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="counter-wrap ftco-animate d-flex mt-md-3">
-              <div class="text">
-                <p class="mb-4">
-                  <span class="number" data-number="5">0</span>
-                  <span>Project complete</span>
-                </p>
-                <p>
-                  <a
-                    href="https://drive.google.com/drive/folders/1tTVUnBzRpIXdIMrmODr5Y8bOB2Vs7u8c?usp=sharing"
-                    target="_blank"
-                    class="btn btn-primary py-3 px-3"
-                    >Download CV</a
-                  >
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="ftco-section ftco-no-pb" id="resume-section">
-      <div class="container">
-        <div class="row justify-content-center pb-5">
-          <div class="col-md-10 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Resume</h1>
-            <h2 class="mb-4">Resume</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="resume-wrap ftco-animate">
-              <span class="date">2023</span>
-              <h2>Internship</h2>
-              <span class="position">Infolahta Kodam III Siliwangi</span>
-              <p class="mt-4">
-                Bekerja di Infolahta Kodam III Siliwangi sebagai mahasiswa
-                magang di bidang Web Developer selama 1 bulan.
-              </p>
-            </div>
+            <ul class="list-disc list-inside text-gray-600 space-y-2">
+              <li>
+                Merancang dan mengimplementasikan fitur-fitur baru secara
+                end-to-end (Backend & Frontend).
+              </li>
+              <li>
+                Menerjemahkan desain UI/UX menjadi antarmuka web interaktif
+                menggunakan framework modern.
+              </li>
+              <li>
+                Melakukan penyesuaian (adjustment) dan optimalisasi pada fitur
+                berjalan.
+              </li>
+              <li>
+                Menganalisis isu sistem dan melakukan debugging secara proaktif
+                guna menjaga stabilitas aplikasi.
+              </li>
+            </ul>
           </div>
 
-          <div class="col-md-6">
-            <div class="resume-wrap ftco-animate">
-              <span class="date">2020-2024</span>
-              <h2>Bachelor of Informatics Engineering</h2>
-              <span class="position">Institur Teknologi Garut</span>
-              <p class="mt-4">
-                Mahasiswa Teknik Informatika yang berfokus pada bidang
-                pengembangan website, aplikasi dan machine learning.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="row justify-content-center mt-5">
-          <div class="col-md-6 text-center ftco-animate">
-            <p>
-              <a
-                href="https://drive.google.com/drive/folders/1tTVUnBzRpIXdIMrmODr5Y8bOB2Vs7u8c?usp=sharing"
-                target="_blank"
-                class="btn btn-primary py-4 px-5"
-                >Download CV</a
-              >
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="ftco-section" id="skills-section">
-      <div class="container">
-        <div class="row justify-content-center pb-5">
-          <div class="col-md-12 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Skills</h1>
-            <h2 class="mb-4">My Skills</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="scroll-container">
-            <div class="scroll-track">
-              <!-- Daftar item -->
-              <div class="scroll-item">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-                  alt="HTML"
-                />
-                <h6>HTML</h6>
-              </div>
-              <div class="scroll-item">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-                  alt="CSS"
-                />
-                <h6>CSS</h6>
-              </div>
-              <div class="scroll-item">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                  alt="JavaScript"
-                />
-                <h6>JavaScript</h6>
-              </div>
-              <div class="scroll-item">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-                  alt="React.js"
-                />
-                <h6>React.js</h6>
-              </div>
-              <div class="scroll-item">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
-                  alt="Python"
-                />
-                <h6>Python</h6>
-              </div>
-              <div class="scroll-item">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
-                  alt="Figma"
-                />
-                <h6>Figma</h6>
-              </div>
-              <div class="scroll-item">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
-                  alt="MySQL"
-                />
-                <h6>MySQL</h6>
-              </div>
-              <div class="scroll-item">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
-                  alt="Git"
-                />
-                <h6>Git</h6>
-              </div>
-              <div class="scroll-item">
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg"
-                  alt="Laravel"
-                />
-                <h6>Laravel</h6>
-              </div>
-              <div class="scroll-item">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
-                  alt="PHP"
-                />
-                <h6>PHP</h6>
-              </div>
-              <!-- Duplikasi item untuk efek loop -->
-              <div class="scroll-item">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-                  alt="HTML"
-                />
-                <h6>HTML</h6>
-              </div>
-              <div class="scroll-item">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-                  alt="CSS"
-                />
-                <h6>CSS</h6>
-              </div>
-              <div class="scroll-item">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                  alt="JavaScript"
-                />
-                <h6>JavaScript</h6>
-              </div>
-              <div class="scroll-item">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-                  alt="React.js"
-                />
-                <h6>React.js</h6>
-              </div>
-              <div class="scroll-item">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
-                  alt="Python"
-                />
-                <h6>Python</h6>
-              </div>
-              <div class="scroll-item">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
-                  alt="Figma"
-                />
-                <h6>Figma</h6>
-              </div>
-              <div class="scroll-item">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
-                  alt="MySQL"
-                />
-                <h6>MySQL</h6>
-              </div>
-              <div class="scroll-item">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
-                  alt="Git"
-                />
-                <h6>Git</h6>
-              </div>
-              <div class="scroll-item">
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg"
-                  alt="Laravel"
-                />
-                <h6>Laravel</h6>
-              </div>
-              <div class="scroll-item">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
-                  alt="PHP"
-                />
-                <h6>PHP</h6>
-              </div>
-              <div class="scroll-item">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-                  alt="HTML"
-                />
-                <h6>HTML</h6>
-              </div>
-              <div class="scroll-item">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-                  alt="CSS"
-                />
-                <h6>CSS</h6>
-              </div>
-              <div class="scroll-item">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                  alt="JavaScript"
-                />
-                <h6>JavaScript</h6>
-              </div>
-              <div class="scroll-item">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-                  alt="React.js"
-                />
-                <h6>React.js</h6>
-              </div>
-              <div class="scroll-item">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
-                  alt="Python"
-                />
-                <h6>Python</h6>
-              </div>
-              <div class="scroll-item">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
-                  alt="Figma"
-                />
-                <h6>Figma</h6>
-              </div>
-              <div class="scroll-item">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
-                  alt="MySQL"
-                />
-                <h6>MySQL</h6>
-              </div>
-              <div class="scroll-item">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
-                  alt="Git"
-                />
-                <h6>Git</h6>
-              </div>
-              <div class="scroll-item">
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg"
-                  alt="Laravel"
-                />
-                <h6>Laravel</h6>
-              </div>
-              <div class="scroll-item">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
-                  alt="PHP"
-                />
-                <h6>PHP</h6>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="ftco-section ftco-project" id="projects-section">
-      <div class="container">
-        <div class="row justify-content-center pb-5">
-          <div class="col-md-12 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Projects</h1>
-            <h2 class="mb-4">Our Projects</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-5">
-            <a href="https://github.com/mriefky11/arsip-surat">
-              <div
-                class="project img ftco-animate d-flex justify-content-center align-items-center"
-                style="background-image: url(images/project2.png)"
-              >
-                <div class="overlay"></div>
-                <div class="text text-center p-4">
-                  <h3>Arsip Surat</h3>
-                  <span>Web Developer</span>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-7">
-            <a
-              href="https://github.com/mriefky11/eye-disease-detection"
-              target="_blank"
-              rel="noopener noreferrer"
+          <div
+            class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-gray-400"
+          >
+            <h3 class="text-xl font-bold text-dark">
+              Fullstack Developer (Magang)
+            </h3>
+            <div
+              class="flex flex-col md:flex-row md:justify-between text-gray-500 text-sm mb-4"
             >
-              <div
-                class="project img ftco-animate d-flex justify-content-center align-items-center"
-                style="background-image: url(images/project1.png)"
-              >
-                <div class="overlay"></div>
-                <div class="text text-center p-4">
-                  <h3>Prototype Eye Disease Detection</h3>
-                  <span>Web App & Machine Learning</span>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-7">
-            <a href="https://github.com/mriefky11/penjualan-toko-daging-online">
-              <div
-                class="project img ftco-animate d-flex justify-content-center align-items-center"
-                style="background-image: url(images/project3.png)"
-              >
-                <div class="overlay"></div>
-                <div class="text text-center p-4">
-                  <h3>E-Commerce Penjualan Toko Daging</h3>
-                  <span>Web Developer</span>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-5">
-            <a href="https://github.com/Hawarikun/Elfin">
-              <div
-                class="project img ftco-animate d-flex justify-content-center align-items-center"
-                style="background-image: url(images/project4.png)"
-              >
-                <div class="overlay"></div>
-                <div class="text text-center p-4">
-                  <h3>Web Booking Mobil Elf</h3>
-                  <span>Web Developer</span>
-                </div>
-              </div>
-            </a>
+              <span>Kodam III Siliwangi – Bandung, Jawa Barat</span>
+              <span class="font-medium">September 2023 – Agustus 2024</span>
+            </div>
+            <ul class="list-disc list-inside text-gray-600 space-y-2">
+              <li>
+                Membangun aplikasi arsip digital berbasis web dari tahap
+                perancangan hingga implementasi.
+              </li>
+              <li>
+                Menganalisis kebutuhan pengguna dan merancang wireframe UI/UX.
+              </li>
+              <li>
+                Menjalankan proses testing dan maintenance rutin untuk menjamin
+                aplikasi berjalan tanpa kendala.
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <section
-      class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img"
-      id="section-counter"
-    >
-      <div class="container">
-        <div class="row d-md-flex align-items-center">
-          <div
-            class="col-md d-flex justify-content-center counter-wrap ftco-animate"
+    <section id="skills" class="py-20 bg-white">
+      <div class="max-w-4xl mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold text-dark mb-10">Keahlian Teknis</h2>
+        <div class="flex flex-wrap justify-center gap-4">
+          <span
+            class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-medium shadow-sm"
+            >PHP & Laravel</span
           >
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="1">0</strong>
-                <span>Years Experience</span>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-md d-flex justify-content-center counter-wrap ftco-animate"
+          <span
+            class="bg-green-100 text-green-800 px-4 py-2 rounded-full font-medium shadow-sm"
+            >JavaScript & Vue.js</span
           >
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="5">0</strong>
-                <span>Complete Projects</span>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-md d-flex justify-content-center counter-wrap ftco-animate"
+          <span
+            class="bg-teal-100 text-teal-800 px-4 py-2 rounded-full font-medium shadow-sm"
+            >Tailwind CSS</span
           >
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="10">0</strong>
-                <span>Skills</span>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-md d-flex justify-content-center counter-wrap ftco-animate"
+          <span
+            class="bg-purple-100 text-purple-800 px-4 py-2 rounded-full font-medium shadow-sm"
+            >Bootstrap</span
           >
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="100">0</strong>
-                <span>Cups of coffee</span>
-              </div>
-            </div>
-          </div>
+          <span
+            class="bg-orange-100 text-orange-800 px-4 py-2 rounded-full font-medium shadow-sm"
+            >HTML5 & CSS3</span
+          >
+          <span
+            class="bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full font-medium shadow-sm"
+            >MySQL</span
+          >
+          <span
+            class="bg-gray-200 text-gray-800 px-4 py-2 rounded-full font-medium shadow-sm"
+            >Git & GitHub</span
+          >
         </div>
       </div>
     </section>
 
-    <section
-      class="ftco-section ftco-hireme img margin-top"
-      style="background-image: url(images/bg_1.jpg)"
-    >
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-7 ftco-animate text-center">
-            <h2>I'm <span>Available</span> for Working</h2>
-            <p></p>
-            <p class="mb-0">
-              <a href="#" class="btn btn-primary py-3 px-5">Hire me</a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <section id="projects" class="py-20 bg-gray-50">
+      <div class="max-w-5xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-dark text-center mb-4">
+          Proyek & Portofolio
+        </h2>
+        <p class="text-center text-gray-600 mb-10">
+          Beberapa proyek yang telah saya kerjakan. Kunjungi GitHub saya untuk
+          melihat kode sumbernya.
+        </p>
 
-    <section
-      class="ftco-section contact-section ftco-no-pb"
-      id="contact-section"
-    >
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Contact</h1>
-            <h2 class="mb-4">Contact Me</h2>
-          </div>
-        </div>
-
-        <div class="row d-flex contact-info mb-5">
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-            <div class="align-self-stretch box p-4 text-center">
-              <div
-                class="icon d-flex align-items-center justify-content-center"
-              >
-                <span class="icon-map-signs"></span>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div
+            class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition flex flex-col"
+          >
+            <div class="p-6 flex-grow">
+              <div class="flex justify-between items-center mb-3">
+                <h3 class="text-xl font-bold text-dark">
+                  Sistem Manajemen Arsip Surat
+                </h3>
+                <i class="fab fa-github text-2xl text-gray-400"></i>
               </div>
-              <h3 class="mb-4">Address</h3>
-              <p>Jl. Saluyu C IV No.186 / II-H Kota Bandung</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-            <div class="align-self-stretch box p-4 text-center">
-              <div
-                class="icon d-flex align-items-center justify-content-center"
-              >
-                <span class="icon-phone2"></span>
-              </div>
-              <h3 class="mb-4">Contact Number</h3>
-              <p><a href="tel://1234567920">(+62) 082-125-358-072</a></p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-            <div class="align-self-stretch box p-4 text-center">
-              <div
-                class="icon d-flex align-items-center justify-content-center"
-              >
-                <span class="icon-paper-plane"></span>
-              </div>
-              <h3 class="mb-4">Email Address</h3>
-              <p>
-                <a href="">mrifki766@gmail.com</a>
+              <p class="text-gray-600 text-sm mb-4">
+                Aplikasi berbasis web untuk digitalisasi dan pengelolaan arsip
+                surat yang dikembangkan selama di Kodam III Siliwangi.
+                Dilengkapi fitur pencarian cepat dan manajemen role.
               </p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-            <div class="align-self-stretch box p-4 text-center">
-              <div
-                class="icon d-flex align-items-center justify-content-center"
-              >
-                <span class="icon-globe"></span>
-              </div>
-              <h3 class="mb-4">Linkedin</h3>
-              <p>
-                <a
-                  href="https://linkedin.com/in/mriefkyraflianas"
-                  target="_blank"
-                  >linkedin.com/in/mriefkyraflianas/</a
+              <div class="flex flex-wrap gap-2 text-xs">
+                <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded"
+                  >Laravel</span
                 >
-              </p>
+                <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded"
+                  >Bootstrap</span
+                >
+                <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded"
+                  >MySQL</span
+                >
+              </div>
+            </div>
+            <div class="bg-gray-50 px-6 py-3 border-t">
+              <a
+                href="LINK_REPOSITORY_PROJECT_1_DISINI"
+                target="_blank"
+                class="text-primary hover:text-blue-800 text-sm font-semibold flex items-center"
+              >
+                Lihat Repository <i class="fas fa-arrow-right ml-2"></i>
+              </a>
             </div>
           </div>
+
+          <div
+            class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition flex flex-col"
+          >
+            <div class="p-6 flex-grow">
+              <div class="flex justify-between items-center mb-3">
+                <h3 class="text-xl font-bold text-dark">
+                  Implementasi Machine Learning Web
+                </h3>
+                <i class="fab fa-github text-2xl text-gray-400"></i>
+              </div>
+              <p class="text-gray-600 text-sm mb-4">
+                Proyek skripsi yang dipublikasikan di ICISS. Mengintegrasikan
+                model Machine Learning ke dalam antarmuka web interaktif untuk
+                pemrosesan data otomatis.
+              </p>
+              <div class="flex flex-wrap gap-2 text-xs">
+                <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded"
+                  >Python</span
+                >
+                <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded"
+                  >Vue.js</span
+                >
+                <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded"
+                  >API Integration</span
+                >
+              </div>
+            </div>
+            <div class="bg-gray-50 px-6 py-3 border-t">
+              <a
+                href="LINK_REPOSITORY_PROJECT_2_DISINI"
+                target="_blank"
+                class="text-primary hover:text-blue-800 text-sm font-semibold flex items-center"
+              >
+                Lihat Repository <i class="fas fa-arrow-right ml-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-12">
+          <a
+            href="https://github.com/mriefky11"
+            target="_blank"
+            class="inline-flex items-center bg-dark text-white px-6 py-3 rounded-lg font-medium hover:bg-gray-800 transition"
+          >
+            <i class="fab fa-github mr-2 text-xl"></i> Kunjungi Profil GitHub
+            Saya
+          </a>
         </div>
       </div>
     </section>
 
-    <footer class="">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <p>
-              Copyright &copy; Mochamad Riefky Rafliana Suwandy
-              <script>
-                document.write(new Date().getFullYear());
-              </script>
-            </p>
-          </div>
+    <footer class="bg-dark text-white py-8 text-center">
+      <div class="max-w-4xl mx-auto px-4">
+        <p class="mb-4">
+          &copy; 2026 Mochamad Riefky Rafliana Suwandy. All rights reserved.
+        </p>
+        <div class="flex justify-center space-x-4 text-gray-400">
+          <a href="LINK_LINKEDIN_ANDA" class="hover:text-white transition"
+            ><i class="fab fa-linkedin text-xl"></i
+          ></a>
+          <a
+            href="https://github.com/mriefky11"
+            class="hover:text-white transition"
+            ><i class="fab fa-github text-xl"></i
+          ></a>
         </div>
       </div>
     </footer>
-
-    <!-- loader -->
-    <div id="ftco-loader" class="show fullscreen">
-      <svg class="circular" width="48px" height="48px">
-        <circle
-          class="path-bg"
-          cx="24"
-          cy="24"
-          r="22"
-          fill="none"
-          stroke-width="4"
-          stroke="#eeeeee"
-        />
-        <circle
-          class="path"
-          cx="24"
-          cy="24"
-          r="22"
-          fill="none"
-          stroke-width="4"
-          stroke-miterlimit="10"
-          stroke="#F96D00"
-        />
-      </svg>
-    </div>
-
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery-migrate-3.0.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.easing.1.3.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/jquery.stellar.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/aos.js"></script>
-    <script src="js/jquery.animateNumber.min.js"></script>
-    <script src="js/scrollax.min.js"></script>
-
-    <script src="js/main.js"></script>
   </body>
 </html>
